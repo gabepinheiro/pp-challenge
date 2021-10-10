@@ -4,6 +4,7 @@ import Toolbar from '@mui/material/Toolbar'
 import Box from '@mui/material/Box'
 import MenuList from '@mui/material/MenuList'
 import MenuItem from '@mui/material/MenuItem'
+import { Logo } from 'ui/logo'
 
 export const NavBar = () => (
   <AppBar
@@ -20,9 +21,7 @@ export const NavBar = () => (
           gap: '48px'
         }}
       >
-        <Typography variant="overline" component="h1">
-          PP - Challenge
-        </Typography>
+        <Logo />
         <MenuList
           sx={{
             display: 'flex',
