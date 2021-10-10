@@ -1,19 +1,7 @@
-import Button from '@mui/material/Button'
-import { styled } from '@mui/system'
-
-const CustomButton = styled(Button)`
-  border-radius: 100px;
-`
+import { NavBar } from 'components/nav-bar'
 
 export default function Index() {
-  return (
-    <>
-      <h1>Marvel</h1>
-      <CustomButton size="large" variant="contained">
-        Custom button
-      </CustomButton>
-    </>
-  )
+  return <NavBar />
 }
 
 export const getStaticProps = async () => {
