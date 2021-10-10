@@ -1,3 +1,4 @@
+import { CssBaseline } from '@mui/material'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
@@ -9,8 +10,10 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/img/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#e62429" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
         <meta name="description" content="PP - Challenge - API Marvel" />
       </Head>
+      <CssBaseline />
       <Component {...pageProps} />
     </>
   )

@@ -1,13 +1,16 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPWA = require('next-pwa')
-const isProd = process.env.NODE_ENV === 'production'
+const withTM = require('next-transpile-modules')([
+  '@mui/material',
+  '@mui/system'
+]) // pass the modules you would like to see transpiled
 
-module.exports = withPWA({
-  images: {
-    domains: ['rickandmortyapi.com']
-  },
-  pwa: {
-    dest: 'public',
-    disable: !isProd
+module.exports = withTM({
+  reactStrictMode: true,
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@mui/styled-engine': '@mui/styled-engine-sc'
+    }
+    return config
   }
 })
