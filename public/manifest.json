@@ -1,21 +1,15 @@
 {
-  "name": "React Avançado - Boilerplate",
-  "short_name": "React Avançado",
+  "name": "PP - Challenge - API Marvel",
+  "short_name": "PP - Challenge - API Marvel",
   "icons": [
     {
-      "src": "/img/icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/img/icon-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "/img/favicon.ico",
+      "type": "image/ico"
     }
   ],
-  "background_color": "#06092B",
-  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
+  "background_color": "#e62429",
+  "description": "PP - Challenge - API Marvel",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#06092B"
+  "theme_color": "##e62429"
 }
