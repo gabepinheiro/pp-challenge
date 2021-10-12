@@ -1,7 +1,7 @@
-import { NavBar } from 'components/nav-bar'
+import { HomeTemplate } from 'templates/Home'
 
-export default function Index() {
-  return <NavBar />
+export default function Home() {
+  return <HomeTemplate />
 }
 
 export const getStaticProps = async () => {
