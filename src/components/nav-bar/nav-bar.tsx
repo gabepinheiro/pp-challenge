@@ -1,10 +1,9 @@
-import Typography from '@mui/material/Typography'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Box from '@mui/material/Box'
 import MenuList from '@mui/material/MenuList'
-import MenuItem from '@mui/material/MenuItem'
 import { Logo } from 'ui/logo'
+import { CustomLink } from 'ui/custom-link'
 
 export const NavBar = () => (
   <AppBar
@@ -24,26 +23,10 @@ export const NavBar = () => (
         <Logo />
         <MenuList
           sx={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            flex: '1'
+            alignSelf: 'stretch'
           }}
         >
-          <MenuItem>
-            <Typography variant="overline" component="span">
-              Characters
-            </Typography>
-          </MenuItem>
-          <MenuItem>
-            <Typography variant="overline" component="span">
-              Movies
-            </Typography>
-          </MenuItem>
-          <MenuItem>
-            <Typography variant="overline" component="span">
-              Series
-            </Typography>
-          </MenuItem>
+          <CustomLink href="/characters">Characters</CustomLink>
         </MenuList>
       </Box>
     </Toolbar>
