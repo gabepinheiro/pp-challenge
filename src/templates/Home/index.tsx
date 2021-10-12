@@ -4,9 +4,13 @@ import Grid from '@mui/material/Grid'
 import { CharacterCard } from 'ui/character-card/'
 import { NavBar } from 'components/nav-bar'
 
-import { characters } from 'resources/mocks/character-mock'
+import { Character } from 'services/types-marvel'
 
-function HomeTemplate() {
+type HomeTemplateProps = {
+  characters: Character[]
+}
+
+function HomeTemplate({ characters }: HomeTemplateProps) {
   return (
     <>
       <NavBar />
@@ -18,9 +22,9 @@ function HomeTemplate() {
           }}
         >
           <Grid container columnSpacing={8}>
-            {characters.map((char) => (
-              <Grid item xs={12} md={6} lg={3} key={char.name}>
-                <CharacterCard {...char} />
+            {characters.map(({ id, name, thumbnail }) => (
+              <Grid item xs={12} md={6} lg={3} key={id}>
+                <CharacterCard name={name} thumbnail={thumbnail} />
               </Grid>
             ))}
           </Grid>

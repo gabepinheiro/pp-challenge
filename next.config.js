@@ -12,5 +12,8 @@ module.exports = withTM({
       '@mui/styled-engine': '@mui/styled-engine-sc'
     }
     return config
+  },
+  images: {
+    domains: ['x.annihil.us']
   }
 })

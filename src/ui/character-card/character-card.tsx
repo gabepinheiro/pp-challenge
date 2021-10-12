@@ -8,20 +8,18 @@ import Box from '@mui/material/Box'
 
 import * as S from './styles'
 
-export type CharacterProps = {
-  name?: string
-  url?: string
-  thumb?: string
-}
+import { Character } from 'services/types-marvel'
 
-function CharacterCard({ name, thumb }: CharacterProps) {
+export type CharacterCardProps = Pick<Character, 'name' | 'thumbnail'>
+
+function CharacterCard({ name, thumbnail }: CharacterCardProps) {
   return (
     <Card sx={S.Card}>
       <Box component="div" sx={S.ContainerCardMedia}>
         <CardMedia
           component="img"
           height="100%"
-          image={thumb}
+          image={`${thumbnail.path}.${thumbnail.extension}`}
           alt={name}
           sx={{
             objectFit: 'cover',
