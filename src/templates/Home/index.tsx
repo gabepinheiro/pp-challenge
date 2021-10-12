@@ -1,8 +1,10 @@
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
-import Paper from '@mui/material/Paper'
+import { CharacterCard } from 'ui/character-card/'
 import { NavBar } from 'components/nav-bar'
+
+import { characters } from 'resources/mocks/character-mock'
 
 function HomeTemplate() {
   return (
@@ -16,26 +18,11 @@ function HomeTemplate() {
           }}
         >
           <Grid container columnSpacing={8}>
-            <Grid item xs={12} md={6} lg={3}>
-              <Paper>
-                <h1>Tony Stark</h1>
-              </Paper>
-            </Grid>
-            <Grid item xs={12} md={6} lg={3}>
-              <Paper>
-                <h1>Tony Stark</h1>
-              </Paper>
-            </Grid>
-            <Grid item xs={12} md={6} lg={3}>
-              <Paper>
-                <h1>Tony Stark</h1>
-              </Paper>
-            </Grid>
-            <Grid item xs={12} md={6} lg={3}>
-              <Paper>
-                <h1>Tony Stark</h1>
-              </Paper>
-            </Grid>
+            {characters.map((char) => (
+              <Grid item xs={12} md={6} lg={3} key={char.name}>
+                <CharacterCard {...char} />
+              </Grid>
+            ))}
           </Grid>
         </Container>
       </Box>
