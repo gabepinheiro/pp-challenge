@@ -30,7 +30,7 @@ type Params = {
   offset?: number
 }
 
-export const request = <T>(url: string, params: Params) =>
+export const request = <T>(url: string, params?: Params) =>
   instanceAxios
     .get<MarvelAPIResponse<T>>(url, {
       params

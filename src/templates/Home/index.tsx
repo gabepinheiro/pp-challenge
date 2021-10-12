@@ -24,7 +24,7 @@ function HomeTemplate({ characters }: HomeTemplateProps) {
           <Grid container columnSpacing={8}>
             {characters.map(({ id, name, thumbnail }) => (
               <Grid item xs={12} md={6} lg={3} key={id}>
-                <CharacterCard name={name} thumbnail={thumbnail} />
+                <CharacterCard id={id} name={name} thumbnail={thumbnail} />
               </Grid>
             ))}
           </Grid>

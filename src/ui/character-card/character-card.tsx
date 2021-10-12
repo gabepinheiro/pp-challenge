@@ -9,10 +9,13 @@ import Box from '@mui/material/Box'
 import * as S from './styles'
 
 import { Character } from 'services/types-marvel'
+import { useRouter } from 'next/router'
 
-export type CharacterCardProps = Pick<Character, 'name' | 'thumbnail'>
+export type CharacterCardProps = Pick<Character, 'id' | 'name' | 'thumbnail'>
 
-function CharacterCard({ name, thumbnail }: CharacterCardProps) {
+function CharacterCard({ id, name, thumbnail }: CharacterCardProps) {
+  const router = useRouter()
+
   return (
     <Card sx={S.Card}>
       <Box component="div" sx={S.ContainerCardMedia}>
@@ -33,7 +36,12 @@ function CharacterCard({ name, thumbnail }: CharacterCardProps) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" color="error">
+        <Button
+          size="small"
+          color="error"
+          onClick={() => router.push(`/character/${id}`)}
+          title={name}
+        >
           Learn more
         </Button>
       </CardActions>
