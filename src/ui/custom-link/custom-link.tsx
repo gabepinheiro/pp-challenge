@@ -1,4 +1,4 @@
-import { Link, LinkProps } from 'components/link'
+import { Link, LinkProps } from 'resources/link'
 
 export const CustomLink = ({ href, children, ...rest }: LinkProps) => (
   <Link

@@ -9,7 +9,7 @@ import Box from '@mui/material/Box'
 import * as S from './styles'
 
 import { Character } from 'services/types-marvel'
-import { Link } from 'components/link'
+import { Link } from 'resources/link'
 
 export type CharacterCardProps = Pick<Character, 'id' | 'name' | 'thumbnail'>
 
