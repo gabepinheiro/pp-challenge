@@ -49,8 +49,6 @@ Abrir [http://localhost:3000](http://localhost:3000) com seu navegador para ver 
 
 Você pode começar a editar a página modificando `pages/index.js`. A página é atualizada automaticamente conforme você edita o arquivo.
 
-<br>
-
 ## Commands
 
 - `dev`: runs your application on `localhost:3000`
@@ -65,5 +63,6 @@ Você pode começar a editar a página modificando `pages/index.js`. A página �
 - [Next.js](https://nextjs.org/)
 - [React.js](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Axios](https://github.com/axios/axios/)
 - [Material UI](https://material-ui.com/)
 - [Styled-components](https://styled-components.com/)
