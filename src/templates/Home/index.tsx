@@ -2,7 +2,7 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 import { CharacterCard } from 'ui/character-card/'
-import { NavBar } from 'components/nav-bar'
+import { NavBar } from 'layout/nav-bar'
 
 import { Character } from 'services/types-marvel'
 

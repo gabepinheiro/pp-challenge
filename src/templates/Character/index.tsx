@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
-import { NavBar } from 'components/nav-bar'
+import { NavBar } from 'layout/nav-bar'
 import { Character } from 'services/types-marvel'
 
 import Image from 'next/image'
