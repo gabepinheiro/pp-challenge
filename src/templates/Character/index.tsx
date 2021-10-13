@@ -9,6 +9,7 @@ import { NavBar } from 'layout/nav-bar'
 import { Character } from 'services/types-marvel'
 
 import Image from 'next/image'
+import Head from 'next/head'
 
 type CharacterTemplateProps = {
   character: Character
@@ -19,6 +20,9 @@ function CharacterTemplate({ character }: CharacterTemplateProps) {
 
   return (
     <>
+      <Head>
+        <title>{character.name}</title>
+      </Head>
       <NavBar />
       <Box
         component="section"
