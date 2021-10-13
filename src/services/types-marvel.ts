@@ -4,10 +4,10 @@ export type Character = {
   description: string
   urls: string[]
   thumbnail: Image
-  comics: ComicList[]
-  stories: StoryList[]
-  events: EventList[]
-  series: SeriesList[]
+  comics: ComicList
+  stories: StoryList
+  events: EventList
+  series: SeriesList
 }
 
 type Image = {

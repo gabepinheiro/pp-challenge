@@ -14,6 +14,6 @@ module.exports = withTM({
     return config
   },
   images: {
-    domains: ['x.annihil.us']
+    domains: ['i.annihil.us']
   }
 })

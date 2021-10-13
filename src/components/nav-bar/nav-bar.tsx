@@ -26,7 +26,7 @@ export const NavBar = () => (
             alignSelf: 'stretch'
           }}
         >
-          <CustomLink href="/characters">Characters</CustomLink>
+          <CustomLink href="/">Characters</CustomLink>
         </MenuList>
       </Box>
     </Toolbar>

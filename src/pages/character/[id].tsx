@@ -2,6 +2,7 @@ import { GetStaticProps } from 'next'
 import { useRouter } from 'next/dist/client/router'
 import { Character } from 'services/types-marvel'
 import * as MarvelAPI from 'services/marvel-api'
+import { CharacterTemplate } from 'templates/Character'
 
 type CharacterPageProps = {
   character: Character
@@ -12,7 +13,7 @@ export default function CharacterPage({ character }: CharacterPageProps) {
 
   if (router.isFallback) return null
 
-  return <h1>{character.name}</h1>
+  return <CharacterTemplate character={character} />
 }
 
 export const getStaticPaths = async () => {
