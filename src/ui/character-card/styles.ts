@@ -3,6 +3,7 @@ export const Card = {
   backgroundColor: 'text.primary',
   color: 'white',
   transition: 'transform .3s',
+  paddingBottom: '8px',
   '&:hover': {
     boxShadow: '0 10px 20px rgba(0,0,0, 0.2)',
     transform: 'translateY(-5px)'
