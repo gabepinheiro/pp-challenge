@@ -65,7 +65,7 @@ function CharacterTemplate({ character }: CharacterTemplateProps) {
         <Container
           sx={{
             maxWidth: '1300px',
-            padding: '32px 0',
+            padding: '2rem 1rem',
             '& > *:not(:last-child)': {
               marginBottom: '42px'
             }
